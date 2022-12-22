@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css?version=80">
+    <title>Tree View</title>
+</head>
+<body>
+
+<section>
+    <div class="container">
+        <h2  class="mb-5 mt-4 text-center">Tree View List</h2>
+        <ul id="tree">
+          <li><span class="node"><span class="caret" onclick="list_child(this)"></span><span class="name">Beverages</span><span class="icons"><i class="fa-solid fa-pen-to-square" onclick="edit_child(this)"></i><i class="fa-solid fa-user-plus" onclick="add_child(this)"></i><i class="fa-solid fa-trash-can" onclick="delete_child(this)"></i></span></span>
+            <ul class="nested">
+              <li><span class="node"><span class="name">Water</span><span class="icons"><i class="fa-solid fa-pen-to-square" onclick="edit_child(this)"></i><i class="fa-solid fa-user-plus" onclick="add_child(this)"></i><i class="fa-solid fa-trash-can" onclick="delete_child(this)"></i></span></span></li>
+              <li><span class="node"><span class="name">Coffee</span><span class="icons"><i class="fa-solid fa-pen-to-square" onclick="edit_child(this)"></i><i class="fa-solid fa-user-plus" onclick="add_child(this)"></i><i class="fa-solid fa-trash-can" onclick="delete_child(this)"></i></span></span></li>
+              <li><span class="node"><span class="caret" onclick="list_child(this)"></span><span class="name">Tea</span><span class="icons"><i class="fa-solid fa-pen-to-square" onclick="edit_child(this)"></i><i class="fa-solid fa-user-plus" onclick="add_child(this)"></i><i class="fa-solid fa-trash-can" onclick="delete_child(this)"></i></span></span>
+                <ul class="nested">
+                  <li><span class="node"><span class="name">Black Tea</span><span class="icons"><i class="fa-solid fa-pen-to-square" onclick="edit_child(this)"></i><i class="fa-solid fa-user-plus" onclick="add_child(this)"></i><i class="fa-solid fa-trash-can" onclick="delete_child(this)"></i></span></span></li>
+                  <li><span class="node"><span class="name">White Tea</span><span class="icons"><i class="fa-solid fa-pen-to-square" onclick="edit_child(this)"></i><i class="fa-solid fa-user-plus" onclick="add_child(this)"></i><i class="fa-solid fa-trash-can" onclick="delete_child(this)"></i></span></span></li>
+                  <li><span class="node"><span class="caret" onclick="list_child(this)"></span><span class="name">Green Tea</span><span class="icons"><i class="fa-solid fa-pen-to-square" onclick="edit_child(this)"></i><i class="fa-solid fa-user-plus" onclick="add_child(this)"></i><i class="fa-solid fa-trash-can" onclick="delete_child(this)"></i></span></span>
+                    <ul class="nested">
+                      <li><span class="node"><span class="name">Sencha</span><span class="icons"><i class="fa-solid fa-pen-to-square" onclick="edit_child(this)"></i><i class="fa-solid fa-user-plus" onclick="add_child(this)"></i><i class="fa-solid fa-trash-can" onclick="delete_child(this)"></i></span></span></li>
+                      <li><span class="node"><span class="name">Gyokuro</span><span class="icons"><i class="fa-solid fa-pen-to-square" onclick="edit_child(this)"></i><i class="fa-solid fa-user-plus" onclick="add_child(this)"></i><i class="fa-solid fa-trash-can" onclick="delete_child(this)"></i></span></span></li>
+                      <li><span class="node"><span class="name">Matcha</span><span class="icons"><i class="fa-solid fa-pen-to-square" onclick="edit_child(this)"></i><i class="fa-solid fa-user-plus"  onclick="add_child(this)"></i><i class="fa-solid fa-trash-can" onclick="delete_child(this)"></i></span></span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+</section>
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js?version=80"></script>
+    
+</body>
+</html>
